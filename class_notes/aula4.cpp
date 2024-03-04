@@ -2,6 +2,7 @@
  
  *COMO AS VARIÁVEIS SÃO ARMAZENADAS, E COM QUE ESPAÇO
  *FORMAS DE PASSAR UMA VARIÁVEL
+ *OPERADORES DE DECISÃO: IF/ELSE, TERNÁRIO E SWITCH/CASE
 
 **/
 
@@ -10,6 +11,7 @@
 using std::cout;
 using std::endl;
 using std::string;
+using std::cin;
 
 int main() {
     
@@ -78,6 +80,34 @@ int main() {
     cout << "usNum: " << usNum << "\nTamanho de usNum: " << sizeof(usNum) << endl;
     
     unsigned long long int ulliNum = 42; 
+
+    int iValor = 42;
+    int iValorLido = 0;
+    int iResultado = 0;
+    
+    cin >> iValorLido;
+    cout << "Resultado: " << iResultado << endl;
+    
+    //Operador Ternário
+    iResultado = (iValorLido<iValor) ? 0 : 1;
+    
+    //Operador Switch/case
+    int iDia = 1;
+    
+    switch (iDia) { // após encontrar o valor correspondente, executa tudo o que está abaixo
+        case 1:
+            cout  << "Segunda-Feira" << endl;
+            break;
+        case 2:
+            cout << "Terça-Feira" << endl;
+            break;
+        case 3:
+            cout << "Quarta-Feira" << endl;
+            break;
+        default:
+            cout << "Dia Louco" << endl;
+            break;
+    }
 
     return 0;
 }
