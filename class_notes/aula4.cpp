@@ -60,5 +60,24 @@ int main() {
     
     cout << strValue_1 << " " << strValue_2 << endl;
 
+    bool bValue_1 = true;
+    bool bValue_2 = false;
+    bool bValue_3 = 42;
+    bool bValue_4 = 0;
+    
+    cout << "bValue_1: " << bValue_1 << "\nTamanho de bValue_1: " << sizeof(bValue_1) << endl;
+    cout << "bValue_2: " << bValue_2 << "\nTamanho de bValue_2: " << sizeof(bValue_2) << endl;
+    cout << "bValue_3: " << bValue_3 << "\nTamanho de bValue_3: " << sizeof(bValue_3) << endl;
+    cout << "bValue_4: " << bValue_4 << "\nTamanho de bValue_4: " << sizeof(bValue_4) << endl;
+    
+    const int iNUMERO = 42;
+    //iNUMERO = 111;
+    cout << "iNUMERO: " << iNUMERO << "\nTamanho de iNUMERO: " << sizeof(iNUMERO) << endl;
+    
+    unsigned short usNum = 42;
+    cout << "usNum: " << usNum << "\nTamanho de usNum: " << sizeof(usNum) << endl;
+    
+    unsigned long long int ulliNum = 42; 
+
     return 0;
 }
