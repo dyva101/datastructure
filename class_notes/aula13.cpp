@@ -91,13 +91,18 @@ int main() {
     Queue* queue = newQueue();
     showFirstElement(queue);
     showLastElement(queue);
-
+    
+    showElements(queue);
+    cout << "///////////////////////////////////////////////" << endl;
+    
     //partições de igualdade, técnicas de teste
     enQueue (queue, 0);
     
     showFirstElement(queue);
     showLastElement(queue);
     
+    showElements(queue);
+    cout << "///////////////////////////////////////////////" << endl;
     //adicionar mais elementos
     enQueue (queue, 3);
     enQueue (queue, 7);
@@ -106,6 +111,8 @@ int main() {
     showFirstElement(queue);
     showLastElement(queue);
     
+    showElements(queue);
+    cout << "///////////////////////////////////////////////" << endl;
     std::cout << "Hello FUCKING STUPID World" << endl;
 
     return 0;
